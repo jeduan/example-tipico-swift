@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D48066A31F6065140028170A /* TipModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48066A21F6065140028170A /* TipModel.swift */; };
+		D48066A51F606C9D0028170A /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48066A41F606C9D0028170A /* SettingsViewController.swift */; };
 		D496EE881F5FBD76003671D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D496EE871F5FBD76003671D0 /* AppDelegate.swift */; };
 		D496EE8A1F5FBD76003671D0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D496EE891F5FBD76003671D0 /* ViewController.swift */; };
 		D496EE8D1F5FBD76003671D0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D496EE8B1F5FBD76003671D0 /* Main.storyboard */; };
@@ -15,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D48066A21F6065140028170A /* TipModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipModel.swift; sourceTree = "<group>"; };
+		D48066A41F606C9D0028170A /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		D496EE841F5FBD76003671D0 /* tipico.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tipico.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D496EE871F5FBD76003671D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D496EE891F5FBD76003671D0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -54,9 +58,11 @@
 		D496EE861F5FBD76003671D0 /* tipico */ = {
 			isa = PBXGroup;
 			children = (
+				D48066A21F6065140028170A /* TipModel.swift */,
 				D496EE871F5FBD76003671D0 /* AppDelegate.swift */,
 				D496EE891F5FBD76003671D0 /* ViewController.swift */,
 				D496EE8B1F5FBD76003671D0 /* Main.storyboard */,
+				D48066A41F606C9D0028170A /* SettingsViewController.swift */,
 				D496EE8E1F5FBD76003671D0 /* Assets.xcassets */,
 				D496EE901F5FBD76003671D0 /* LaunchScreen.storyboard */,
 				D496EE931F5FBD76003671D0 /* Info.plist */,
@@ -136,8 +142,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D48066A31F6065140028170A /* TipModel.swift in Sources */,
 				D496EE8A1F5FBD76003671D0 /* ViewController.swift in Sources */,
 				D496EE881F5FBD76003671D0 /* AppDelegate.swift in Sources */,
+				D48066A51F606C9D0028170A /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +283,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 438C9XY7Q3;
 				INFOPLIST_FILE = tipico/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jeduan.tipico;
@@ -289,6 +298,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 438C9XY7Q3;
 				INFOPLIST_FILE = tipico/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jeduan.tipico;

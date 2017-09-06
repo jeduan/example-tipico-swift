@@ -48,20 +48,8 @@
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kti-0B-Rd6">
                                 <rect key="frame" x="0.0" y="191" width="375" height="9"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.64725401599999999" green="0.11727765969999999" blue="0.24960985259999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" red="0.64917761087417603" green="0.11881451308727264" blue="0.25107923150062561" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </view>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="3iD-24-m3e">
-                                <rect key="frame" x="16" y="300" width="343" height="29"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <segments>
-                                    <segment title="18%"/>
-                                    <segment title="20%"/>
-                                    <segment title="25%"/>
-                                </segments>
-                                <connections>
-                                    <action selector="didChangeValue:" destination="BYZ-38-t0r" eventType="valueChanged" id="NV7-Ju-vrP"/>
-                                </connections>
-                            </segmentedControl>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FLo-zJ-Giv">
                                 <rect key="frame" x="262" y="87" width="97" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
@@ -88,10 +76,14 @@
                             <outletCollection property="gestureRecognizers" destination="5jG-mF-AQT" appends="YES" id="oJp-Av-E27"/>
                         </connections>
                     </view>
-                    <navigationItem key="navigationItem" title="Típico" id="fWy-Ib-JyD"/>
+                    <navigationItem key="navigationItem" title="Típico" id="fWy-Ib-JyD">
+                        <barButtonItem key="rightBarButtonItem" title="Settings" id="brT-TG-AX9">
+                            <connections>
+                                <segue destination="vaK-XE-cDH" kind="show" id="10r-AK-rP5"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
-                        <outlet property="billField" destination="FLo-zJ-Giv" id="8OS-km-RLF"/>
-                        <outlet property="tipAmountControl" destination="3iD-24-m3e" id="v3j-ZZ-8Sn"/>
                         <outlet property="tipLabel" destination="pQi-Dv-iHI" id="wtc-E6-HGf"/>
                         <outlet property="totalLabel" destination="aGZ-YU-pMn" id="DyH-8R-Yt6"/>
                     </connections>
@@ -103,7 +95,47 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="476" y="133.5832083958021"/>
+            <point key="canvasLocation" x="1302" y="108"/>
+        </scene>
+        <!--Settings-->
+        <scene sceneID="EVG-S7-BGH">
+            <objects>
+                <viewController title="Settings" id="vaK-XE-cDH" customClass="SettingsViewController" customModule="tipico" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="13U-TO-ef3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tip Percentage" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rle-oJ-l2l">
+                                <rect key="frame" x="16" y="86" width="116" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="q5q-tO-he4">
+                                <rect key="frame" x="16" y="127" width="343" height="29"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="18%"/>
+                                    <segment title="20%"/>
+                                    <segment title="25%"/>
+                                </segments>
+                                <color key="tintColor" red="0.64917773008346558" green="0.131043940782547" blue="0.25107851624488831" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <connections>
+                                    <action selector="didChange:" destination="vaK-XE-cDH" eventType="valueChanged" id="DxR-Kw-9DN"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="ZJB-BT-YTz"/>
+                    </view>
+                    <connections>
+                        <outlet property="percentControl" destination="q5q-tO-he4" id="uXy-pI-kPm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ygP-DR-QYS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2108" y="95.802098950524751"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="1wH-vi-KZA">

@@ -11,12 +11,9 @@ import UIKit
 class ViewController: UIViewController {
     @IBOutlet weak var tipLabel: UILabel!
     @IBOutlet weak var totalLabel: UILabel!
-    @IBOutlet weak var billField: UITextField!
-    @IBOutlet weak var tipAmountControl: UISegmentedControl!
-    
+        
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -27,20 +24,11 @@ class ViewController: UIViewController {
         view.endEditing(true)
     }
     
-    @IBAction func didChangeValue(_ sender: Any) {
-        let subTotal = Double(billField.text!) ?? 0
-        let tipPercentages = [
-            0.18,
-            0.2,
-            0.25
-        ]
-        let tipPercent = tipPercentages[tipAmountControl.selectedSegmentIndex]
-        
-        let tip = subTotal * tipPercent
-        let total = subTotal + tip
-        
-        tipLabel.text = String(format: "$%0.2f", tip)
-        totalLabel.text = String(format: "$%0.2f", total)
+    @IBAction func didChangeValue(_ sender: UITextField) {
+        let subTotal = Double(sender.text!) ?? 0
+        TipModel.sharedInstance.subTotal = subTotal
+        tipLabel.text = String(format: "$%0.2f", TipModel.sharedInstance.getTip())
+        totalLabel.text = String(format: "$%0.2f", TipModel.sharedInstance.getTotal())
     }
     
 }
