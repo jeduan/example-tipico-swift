@@ -27,9 +27,10 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='https://i.imgur.com/UcRCVcZ.gifv' title='Video Walkthrough' width='' alt='Video Walkthrough' />
-
-GIF created with [LiceCap](http://www.cockos.com/licecap/).
+<video preload="auto" autoplay="autoplay" loop="loop" style="width: 360px; height: 640px;">
+<source src="//i.imgur.com/UcRCVcZ.mp4" type="video/mp4"></source>
+<source src="//i.imgur.com/UcRCVcZ.webm" type="video/webm"></source>
+</video>
 
 ## Project Analysis
 
