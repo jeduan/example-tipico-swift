@@ -19,6 +19,7 @@
 /* Begin PBXFileReference section */
 		D48066A21F6065140028170A /* TipModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipModel.swift; sourceTree = "<group>"; };
 		D48066A41F606C9D0028170A /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		D48066A61F60755C0028170A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		D496EE841F5FBD76003671D0 /* tipico.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tipico.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D496EE871F5FBD76003671D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D496EE891F5FBD76003671D0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -42,6 +43,7 @@
 		D496EE7B1F5FBD76003671D0 = {
 			isa = PBXGroup;
 			children = (
+				D48066A61F60755C0028170A /* README.md */,
 				D496EE861F5FBD76003671D0 /* tipico */,
 				D496EE851F5FBD76003671D0 /* Products */,
 			);
