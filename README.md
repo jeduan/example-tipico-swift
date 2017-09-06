@@ -25,7 +25,7 @@ The following **additional** features are implemented:
 
 ## Video Walkthrough 
 
-Here's a walkthrough of implemented user stories:
+[Here's a walkthrough of implemented user stories:](https://imgur.com/UcRCVcZ)
 
 <video preload="auto" autoplay="autoplay" loop="loop" style="width: 360px; height: 640px;">
 <source src="//i.imgur.com/UcRCVcZ.mp4" type="video/mp4"></source>
