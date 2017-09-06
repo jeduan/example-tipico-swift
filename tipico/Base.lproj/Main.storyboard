@@ -84,6 +84,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="subTotalField" destination="FLo-zJ-Giv" id="uTe-yG-nmL"/>
                         <outlet property="tipLabel" destination="pQi-Dv-iHI" id="wtc-E6-HGf"/>
                         <outlet property="totalLabel" destination="aGZ-YU-pMn" id="DyH-8R-Yt6"/>
                     </connections>

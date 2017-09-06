@@ -11,9 +11,11 @@ import UIKit
 class ViewController: UIViewController {
     @IBOutlet weak var tipLabel: UILabel!
     @IBOutlet weak var totalLabel: UILabel!
-        
+    @IBOutlet weak var subTotalField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        subTotalField.becomeFirstResponder()
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
